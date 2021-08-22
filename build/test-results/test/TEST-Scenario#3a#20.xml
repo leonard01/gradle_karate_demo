@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: " tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-22T17:24:34" hostname="Leonards-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="* def currentDate =" classname="Scenario: " time="0.0"/>
+  <testcase name="* def currentISODate =" classname="Scenario: " time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: " time="0.009"/>
+  <system-out><![CDATA[18:24:34.350 [Test worker] ERROR com.intuit.karate - could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:34.350 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

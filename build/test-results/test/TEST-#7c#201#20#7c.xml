@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| 1 |" tests="28" skipped="0" failures="0" errors="0" timestamp="2021-08-22T17:24:32" hostname="Leonards-MacBook-Pro.local" time="1.463">
+  <properties/>
+  <testcase name="* call read('common.feature')" classname="| 1 |" time="0.001"/>
+  <testcase name="Given url 'https://api.coindesk.com/'" classname="| 1 |" time="0.0"/>
+  <testcase name="Given path 'v1/bpi/currentprice.json'" classname="| 1 |" time="0.0"/>
+  <testcase name="When method get" classname="| 1 |" time="0.001"/>
+  <testcase name="Then status 200" classname="| 1 |" time="0.0"/>
+  <testcase name="And match $ contains {time: '#notnull'}" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response contains {time: '#notnull'}" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response.time.updated contains call currentDate" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response.time.updatedISO contains call currentISODate" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response.disclaimer contains &quot;This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org&quot;" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response.bpi.USD.code contains 'USD'" classname="| 1 |" time="0.0"/>
+  <testcase name="classMethod" classname="| 1 |" time="1.29"/>
+  <testcase name="* call read('common.feature')" classname="| 1 |" time="0.0"/>
+  <testcase name="Given url 'https://jsonplaceholder.typicode.com/posts/'" classname="| 1 |" time="0.0"/>
+  <testcase name="When request { &quot;title&quot;:&quot;this is the title&quot;, &quot;body&quot;:&quot;this is the body&quot;, &quot;userId&quot;:&quot;1&quot; }" classname="| 1 |" time="0.001"/>
+  <testcase name="And method post" classname="| 1 |" time="0.001"/>
+  <testcase name="Then status 201" classname="| 1 |" time="0.0"/>
+  <testcase name="And print 'Post Response is: ', response" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response contains {&quot;title&quot;:&quot;this is the title&quot;, &quot;body&quot;:&quot;this is the body&quot;, &quot;userId&quot;:&quot;1&quot;, &quot;id&quot;: 101}" classname="| 1 |" time="0.0"/>
+  <testcase name="classMethod" classname="| 1 |" time="0.334"/>
+  <testcase name="* call read('common.feature')" classname="| 1 |" time="0.0"/>
+  <testcase name="Given url 'https://jsonplaceholder.typicode.com/posts/1'" classname="| 1 |" time="0.0"/>
+  <testcase name="When request { &quot;title&quot;:&quot;updated title&quot;, &quot;body&quot;:&quot;updated title&quot;, &quot;userId&quot;:&quot;1&quot; }" classname="| 1 |" time="0.0"/>
+  <testcase name="And method put" classname="| 1 |" time="0.0"/>
+  <testcase name="Then status 200" classname="| 1 |" time="0.0"/>
+  <testcase name="And print 'Put Response is: ', response" classname="| 1 |" time="0.0"/>
+  <testcase name="And match response contains {&quot;title&quot;:&quot;updated title&quot;, &quot;body&quot;:&quot;updated title&quot;, &quot;userId&quot;:&quot;1&quot;, &quot;id&quot;: 1}" classname="| 1 |" time="0.0"/>
+  <testcase name="classMethod" classname="| 1 |" time="0.294"/>
+  <system-out><![CDATA[18:24:32.746 [Test worker] ERROR com.intuit.karate - could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:32.748 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:33.708 [Test worker] ERROR com.intuit.karate - could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:33.708 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:34.049 [Test worker] ERROR com.intuit.karate - could not find or read file: karate-config.js, prefix: CLASSPATH
+18:24:34.049 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
